@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ainosoft</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <!-- <script type="text/javascript" src="index.js"></script>  -->
+
+    <style>
+        body {
+            font-family: "Oswald", sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            height: 90vh;
+        }
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: white;
+            font-size: 15px;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            color: #787878;
+            text-align: center;
+            padding: 10px 9px;
+            text-decoration: none;
+            font-family: "Oswald", sans-serif;
+        }
+
+        li a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+
+        }
+
+
+        h2 {
+            margin: 10px 0;
+            font-size: 35px;
+            color: #666666;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .section-head {
+            color: #000;
+            font-size: 15px;
+            font-weight: 250;
+            opacity: 0.9;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16.5px;
+            max-width: 800px;
+            color: black;
+            line-height: 1.8em;
+            padding: 10px;
+            font-weight: 300;
+            margin: 0 auto;
+        }
+
+        .box-container h5 {
+            display: inline-block;
+            background-color: #404040;
+            padding: 15px;
+            margin: 30px;
+            border: 1px solid #666666;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .fa {
+            float: left;
+            margin-right: 0;
+            font-size: 60px;
+
+        }
+
+        span {
+            margin-top: 20px;
+            text-align: center;
+            margin-right: 0;
+        }
+
+        #web-app {
+
+            position: relative;
+            right: 35px;
+            top: 10px;
+        }
+
+        #fantastic-mobile-app {
+
+            position: relative;
+            right: 0px;
+            top: 10px;
+        }
+
+        #amazing-team{
+
+            position: relative;
+            right: 10px;
+            top: 10px;
+        }
+
+
+
+        .back,
+        .forward {
+            cursor: pointer;
+            position: absolute;
+            top: 45%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .forward {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .back:hover,
+        .forward:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .info {
+            color:thistle;
+            font-size: 60px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 90px;
+            width: 100%;
+            text-align: start;
+        }
+
+
+        .numberinfo {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dots:hover {
+            background-color: #333;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="bgimg"> 
+</div> -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numberinfo">1/5</div>
+            <img src="images/4istockphoto.jpg" style="width: 100%">
+            <div class="info">AINOSOFT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numberinfo">2/5</div>
+            <img src="images/3istockphoto.jpg" style="width: 100%">
+            <div class="info">AINOSOFT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numberinfo">3/5</div>
+            <img src="images/2istockphoto.jpg" style="width: 100%">
+            <div class="info">AINOSOFT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numberinfo">4/5</div>
+            <img src="images/photo-1495.png" style="width: 100%">
+            <div class="info">AINOSOFT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numberinfo">5/5</div>
+            <img src="images/photo-150.jpeg" style="width: 100%">
+            <div class="info">AINOSOFT</div>
+        </div>
+
+        <a class="back" onclick="plusSlides(-1)"> &#10094;</a>
+        <a class="forward" onclick="plusSlides(1)"> &#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="curremtSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currnetSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br>
+
+
+    <div class="topnav" id="myTopnav">
+    <ul>
+        <li>
+            <nav><a class="active1" href="#contact us">CONTACT US</a></nav>
+        </li>
+        <li>
+            <nav><a href="#careers">CAREERS</a></nav>
+        </li>
+        <li>
+            <nav><a href="#technologies">TECHNOLOGIES</a></nav>
+        </li>
+        <li>
+            <nav><a href="#portfolio">PORTFOLIO</a></nav>
+        </li>
+        <li>
+            <nav><a href="#clients">CLIENTS</a></nav>
+        </li>
+        <li>
+            <nav><a href="#services">SERVICES</a></nav>
+        </li>
+        <li>
+            <nav><a href="#about" class="nav-link">ABOUT US</a></nav>
+        </li>
+        <!-- <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </li> -->
+            
+    </ul>
+</div>
+    <!-- <div style="text-align: center">
+        <a class="start" style="color: white">
+            <i class="fa fa-angle-double-down" style="font-size:48px;color:red"></i>"MORE"</a><br>
+    </div> -->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <!-- <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+    </script> -->
+
+
+    <div id="about" class="section">
+        <div class="content"><br></div>
+    </div>
+
+    <div class="container">
+        <h3 class="section-head">WHO WE ARE</h3>
+        <h2>About Us</h2>
+        <div class="firstslide">
+            <div class="small-separator">__________</div>
+            <p>We are a group of experienced engineers and designers in love with building applications of diverse
+                nature including web and mobile. We value not only the look of what we build but even more the
+                process we follow, architecture we use, designs we choose, implement. For us building applications
+                is a scientific art achieved through thorough use of Agile practices. We participate in all phases of
+                software development lifecycle and specialize in product development.
+            </p>
+            <h3 class="section-head">WE BUILD</h3>
+            <div class="small-separator">__________</div>
+
+            <div id="about" class="section">
+                <div class="content"><br></div>
+            </div>
+            <div class="box-container">
+                <h5>
+                    <i class="fa fa-mobile-phone" style="font-size: 35px; color:white;"></i>
+                    <span id="fantastic-mobile-app">FANTASTIC MOBILE APPS</span>
+                </h5>
+                <h5>
+                    <i class="fa fa-laptop" style="font-size: 30px; color: white;"></i>
+                    <span id="web-app">WEB APPS</span>
+                </h5>
+                <h5>
+                    <i class="fa fa-users" style="font-size: 30px; color: white;"></i>
+                    <span id="amazing-team">AMAZING TEAMS</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
