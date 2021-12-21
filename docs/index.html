@@ -24,109 +24,6 @@
             height: 90vh;
         }
 
-        ul {
-            list-style-type: none;
-            overflow: hidden;
-            background-color: white;
-            font-size: 15px;
-        }
-
-        li {
-            float: right;
-        }
-
-        li a {
-            color: #787878;
-            text-align: center;
-            padding: 10px 9px;
-            text-decoration: none;
-            font-family: "Oswald", sans-serif;
-        }
-
-        li a:hover {
-            color: black;
-            font-weight: bold;
-        }
-
-        .container {
-            text-align: center;
-
-        }
-
-
-        h2 {
-            margin: 10px 0;
-            font-size: 35px;
-            color: #666666;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-
-        .section-head {
-            color: #000;
-            font-size: 15px;
-            font-weight: 250;
-            opacity: 0.9;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-        }
-
-        p {
-            font-size: 16.5px;
-            max-width: 800px;
-            color: black;
-            line-height: 1.8em;
-            padding: 10px;
-            font-weight: 300;
-            margin: 0 auto;
-        }
-
-        .box-container h5 {
-            display: inline-block;
-            background-color: #404040;
-            padding: 15px;
-            margin: 30px;
-            border: 1px solid #666666;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-        }
-
-        .fa {
-            float: left;
-            margin-right: 0;
-            font-size: 60px;
-
-        }
-
-        span {
-            margin-top: 20px;
-            text-align: center;
-            margin-right: 0;
-        }
-
-        #web-app {
-
-            position: relative;
-            right: 35px;
-            top: 10px;
-        }
-
-        #fantastic-mobile-app {
-
-            position: relative;
-            right: 0px;
-            top: 10px;
-        }
-
-        #amazing-team{
-
-            position: relative;
-            right: 10px;
-            top: 10px;
-        }
-
-
-
         .back,
         .forward {
             cursor: pointer;
@@ -154,7 +51,7 @@
         }
 
         .info {
-            color:thistle;
+            color: thistle;
             font-size: 60px;
             padding: 8px 12px;
             position: absolute;
@@ -185,7 +82,7 @@
 
         .active,
         .dots:hover {
-            background-color: #333;
+            background-color: #404040;
         }
 
         .fade {
@@ -214,12 +111,300 @@
                 opacity: 1
             }
         }
+
+        .navbar {
+            background: white;
+            /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
+            font-size: 18px;
+            border: 1px solid rgba(133, 128, 128, 0.2);
+            padding-bottom: 0rem;
+
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+            background-color:#404040;
+            margin-top:9%;
+
+        }
+
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto
+        }
+
+        .nav-links {
+            margin-top: 2%;
+            color: white;
+            font-size: 15px;
+            /* text-align: center;
+            padding: 10px 9px; */
+            text-decoration: none;
+            font-family: "Oswald", sans-serif;
+            padding: 0px;
+            margin-right: 35px;
+        }
+
+        .navbar-toggle {
+            position: relative;
+            top: -1rem;
+            float: right;
+            cursor: pointer;
+            color: #404040;
+            font-size: medium;
+        }
+
+       .image-logo {
+            font-size: 25px;
+            position: absolute;
+            top: 40rem;
+            right: 17rem;
+            height: 6vh;
+            width: 24vw;
+        }
+
+        .logo:hover {
+            color:#666666;
+        }
+
+        .nav-links:hover {
+            color: #787878;
+            font-weight: bold;
+        }
+
+        .open {
+            display: block;
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: contents;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+                background-color: white;
+                margin-top:5%;
+            }
+
+
+            .main-nav li {
+                margin: 0;
+                color: #787878;
+            }
+
+            .nav-links {
+                margin-left: 20px;
+                font-family: "Oswald", sans-serif;
+                font-size: 15px;
+                padding: 0px;
+                margin-right: 0px;
+                color: #787878;
+            }
+
+            .image-logo {
+                font-size: 25px;
+                position: absolute;
+                top: 47rem;
+                right: 85rem;
+                height: 5vh;
+                width: 9vw;
+            }
+
+            .logo:hover {
+                color:#666666;
+            }
+
+            .navbar-toggle {
+                display: none;
+                left: 20rem;
+            }
+
+            .nav-links:hover {
+                color: black;
+            }
+        }
+
+
+        .container {
+            text-align: center;
+
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 35px;
+            color: #666666;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .about-head {
+            color: #000;
+            font-size: 15px;
+            font-weight: 250;
+            opacity: 0.9;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+           
+        }
+
+        p {
+            font-size: 16.5px;
+            max-width: 800px;
+            color: black;
+            line-height: 1.8em;
+            padding: 10px;
+            font-weight: 300;
+            margin: 0 auto;
+            font-family: "Oswald",sans-serif;
+        }
+
+        .box-container h5 {
+            display: inline-block;
+            background-color: #404040;
+            padding: 15px;
+            margin: 30px;
+            border: 1px solid #666666;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .fa {
+            float: left;
+            margin-right: 0;
+            font-size: 30px;
+
+        }
+
+        span {
+            margin-top: 20px;
+            text-align: center;
+            margin-right: 0;
+        }
+
+        #web-app {
+
+            position: relative;
+            right: 35px;
+            top: 10px;
+        }
+
+        #fantastic-mobile-app {
+
+            position: relative;
+            right: 0px;
+            top: 10px;
+        }
+
+        #amazing-team {
+
+            position: relative;
+            right: 10px;
+            top: 10px;
+        }
+
+        .services{
+            background-color: #787878;
+            text-align: center;
+        }
+
+        .service-head {
+            color:white;
+            font-size: 15px;
+            font-weight: 250;
+            opacity: 0.9;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-family: "Oswald",sans-serif;
+        }
+
+        h2.white{
+            margin: 10px 0;
+            font-size: 35px;
+            color:white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .second-slide{
+            color: white;
+        }
+
+        p.description{
+            font-size: 16.5px;
+            max-width: 800px;
+            color:white;
+            line-height: 1.8em;
+            padding: 10px;
+            font-weight: 300;
+            margin: 0 auto;
+        }
+
+        .services-first-box{
+            margin: 0 20px 10px 20px;
+            display: inline-block;
+            width: 250px;
+            position: relative; 
+
+        }
+
+        .services-box{
+            padding: 17px 35px;
+            width: 250px;
+            float: left;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            color: #fff;
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .services-white-box{
+            color: #909090;
+            background: #fff;
+        }
+
+        .services2-box{
+            padding: 17px 35px;
+            width: 250px;
+            float: left;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+        }
+
+       
+        
+
+
     </style>
 </head>
 
 <body>
-    <!-- <div class="bgimg"> 
-</div> -->
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="numberinfo">1/5</div>
@@ -266,41 +451,6 @@
     <br>
 
 
-    <div class="topnav" id="myTopnav">
-    <ul>
-        <li>
-            <nav><a class="active1" href="#contact us">CONTACT US</a></nav>
-        </li>
-        <li>
-            <nav><a href="#careers">CAREERS</a></nav>
-        </li>
-        <li>
-            <nav><a href="#technologies">TECHNOLOGIES</a></nav>
-        </li>
-        <li>
-            <nav><a href="#portfolio">PORTFOLIO</a></nav>
-        </li>
-        <li>
-            <nav><a href="#clients">CLIENTS</a></nav>
-        </li>
-        <li>
-            <nav><a href="#services">SERVICES</a></nav>
-        </li>
-        <li>
-            <nav><a href="#about" class="nav-link">ABOUT US</a></nav>
-        </li>
-        <!-- <li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-        </li> -->
-            
-    </ul>
-</div>
-    <!-- <div style="text-align: center">
-        <a class="start" style="color: white">
-            <i class="fa fa-angle-double-down" style="font-size:48px;color:red"></i>"MORE"</a><br>
-    </div> -->
-
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -329,25 +479,56 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <img class="image-logo" src="images/logo.png">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#about" class="nav-links" >ABOUT US</a>
+            </li>
+            <li>
+                <a href="#services" class="nav-links">SERVICES</a>
+            </li>
+            <li>
+                <a href="#clients" class="nav-links">CLIENTS</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-links">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#technologies" class="nav-links">TECHNOLOGIES</a>
+            </li>
+            <li>
+                <a href="#careers" class="nav-links">CAREERS</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-links">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
 
-    <!-- <script>
-            function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-            x.className += " responsive";
-            } else {
-            x.className = "topnav";
-            }
-        }
-    </script> -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('open');
+        });
+    </script>
+    <!-- <div style="text-align: center">
+        <a class="start" style="color: white">
+            <i class="fa fa-angle-double-down" style="font-size:48px;color:red"></i>"MORE"</a><br>
+    </div> -->
 
 
     <div id="about" class="section">
-        <div class="content"><br></div>
+        <div class="content"><br><br></div>
     </div>
 
     <div class="container">
-        <h3 class="section-head">WHO WE ARE</h3>
+        <h3 class="about-head">WHO WE ARE</h3>
         <h2>About Us</h2>
         <div class="firstslide">
             <div class="small-separator">__________</div>
@@ -357,7 +538,7 @@
                 is a scientific art achieved through thorough use of Agile practices. We participate in all phases of
                 software development lifecycle and specialize in product development.
             </p>
-            <h3 class="section-head">WE BUILD</h3>
+            <h3 class="about-head">WE BUILD</h3>
             <div class="small-separator">__________</div>
 
             <div id="about" class="section">
@@ -376,6 +557,39 @@
                     <i class="fa fa-users" style="font-size: 30px; color: white;"></i>
                     <span id="amazing-team">AMAZING TEAMS</span>
                 </h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="section">
+        <div class="content"><br><br></div>
+    </div>
+
+    <div class="services"><br><br><br>
+        <h3 class="service-head">WHAT WE DO</h3>
+        <h2 class="white">Services</h2>
+        <div class="second-slide">
+            <div class="small-separator">__________</div>
+            <p class="description">We offer various serviecs needed to build a software product in entirety. We engage clients and other 
+                stakeholders at any required phase, be it conceptualization to deployment and support. We engage with
+                clients using multiple innovative and flexible business models that meet client needs in total. 
+            </p>
+            
+            <div id="services" class="section">
+                <div class="content"><br></div>
+            </div>
+            <div class="services-box-container">
+                <div class="services-first-box">
+                    <a name="0" class="services-box">STARTUP <br> PARTNERSHIP</a>
+                </div>
+                <div class="services-white-box">
+                <div class="services-first-box">
+                    <a name="1" class="services2-box">RESOURCE <br>AUGMENTATION</a>
+                </div>
+                </div>
+                <div class="services-first-box">
+                    <a name="2" class="services-box">FULLY MANAGED <br> SOLUTION DELIVERY</a>
+                </div>
             </div>
         </div>
     </div>
