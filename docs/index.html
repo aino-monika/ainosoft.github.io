@@ -294,24 +294,54 @@
         }
 
         #web-app {
-
+            color: white;
             position: relative;
             right: 35px;
             top: 10px;
         }
 
         #fantastic-mobile-app {
-
+            color: white;
             position: relative;
             right: 0px;
             top: 10px;
         }
 
         #amazing-team {
-
+            color: white;
             position: relative;
             right: 10px;
             top: 10px;
+        }
+
+        /* #services.content{
+            padding: 50px 0 0 0;
+        } */
+
+        .services-icon{
+            position: relative;
+            top: -36px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 70px;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            z-index: 4;
+            color: #ffcc00;
+            background-color: #404040;
+        }
+
+        .services-icon i{
+            margin: 40% 40%;
+        }
+
+        .fa{
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
         }
 
         .services{
@@ -354,16 +384,26 @@
         .services-first-box{
             margin: 0 20px 10px 20px;
             display: inline-block;
-            width: 250px;
+            width: 255px;
             position: relative; 
+            border: none;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+            text-decoration: none;
+            margin:20px;
+            padding: 0px;
 
         }
 
         .services-box{
             padding: 17px 35px;
-            width: 250px;
+            width: 185px;
             float: left;
-            margin-top: 0px;
+            margin-top: 10px;
             margin-bottom: 30px;
             border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 4px;
@@ -376,14 +416,10 @@
             text-transform: uppercase;
         }
 
-        .services-white-box{
-            color: #909090;
-            background: #fff;
-        }
-
         .services2-box{
+            background-color: white;
             padding: 17px 35px;
-            width: 250px;
+            width: 185px;
             float: left;
             margin-top: 0px;
             margin-bottom: 30px;
@@ -397,8 +433,38 @@
             text-transform: uppercase;
         }
 
-       
-        
+        .services-white-box{
+            display:inline-block;
+            color: #909090;
+            /* background: #fff; */
+        }
+
+        /* .icon-holder{
+            width: 90px;
+            height: 90px;
+            margin: 6px auto 6px;
+            border-radius: 100%;
+            line-height: 60px;
+            position: relative;
+            background-color: #404040;
+        }
+
+        .serviceslider h3{
+            font-size: 24px;
+            color: #ccc;
+            margin-bottom: 16px;
+            font-family: "Oswald", sans-serif;
+        }
+
+        .service-container p{
+            font-size: 1.1em;
+            max-width: 800px;
+            color: black;
+            line-height: 1.8em;
+            padding: 10px;
+            font-weight: 300;
+            margin: 0 auto;
+        } */
 
 
     </style>
@@ -563,20 +629,26 @@
 
     <div id="services" class="section">
         <div class="content"><br><br></div>
-    </div>
+    </div><br><br>
 
-    <div class="services"><br><br><br>
+    <div class="services">
+        <div id="services" class="section">
+            <div class="content"></div>
+            <div class="services-icon">
+                <i class="fa fa-cogs"></i>
+            </div>
+        </div>
         <h3 class="service-head">WHAT WE DO</h3>
         <h2 class="white">Services</h2>
         <div class="second-slide">
-            <div class="small-separator">__________</div>
+            <div class="small-separator">__________</div><br>
             <p class="description">We offer various serviecs needed to build a software product in entirety. We engage clients and other 
                 stakeholders at any required phase, be it conceptualization to deployment and support. We engage with
                 clients using multiple innovative and flexible business models that meet client needs in total. 
             </p>
             
             <div id="services" class="section">
-                <div class="content"><br></div>
+                <div class="content"></div>
             </div>
             <div class="services-box-container">
                 <div class="services-first-box">
@@ -592,7 +664,32 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br>
+
+    <!-- <div class="serviceslider-holder">
+        <div class="service-container">
+            <div class="serviceslider">
+                <div class="flex-viewport" style="overflow: hidden; position: relative; height: 297px;">
+                    <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-676px, 0px,0px);">
+                        <li class="clone" aria-hidden="true" style="width: 701px; float: left; display: block;">
+                        <div class="icon-holder">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Fully managed solution delivery</h3>
+                        <p>"Are you looking for minimal involvement and timely deliveries. This
+                            model could be for you. We take complete ownership of end to end 
+                            management of your requirements and work towards mutually agreed 
+                            timely deliveries"
+                        </p>
+                        </li>
+
+
+
+            </div>
+        </div>
+    </div> -->
+
+
 
 
 
