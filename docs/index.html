@@ -149,7 +149,7 @@
 
         .navbar-toggle {
             position: relative;
-            top: -1rem;
+            margin-top: 1%;
             float: right;
             cursor: pointer;
             color: #404040;
@@ -159,8 +159,8 @@
        .image-logo {
             font-size: 25px;
             position: absolute;
-            top: 40rem;
-            right: 17rem;
+            top: 99%;
+            right: 75%;
             height: 6vh;
             width: 24vw;
         }
@@ -215,7 +215,7 @@
             .image-logo {
                 font-size: 25px;
                 position: absolute;
-                top: 47rem;
+                top: 50rem;
                 right: 85rem;
                 height: 5vh;
                 width: 9vw;
@@ -439,7 +439,9 @@
             /* background: #fff; */
         }
 
-        /* .icon-holder{
+
+
+        .icon-holder{
             width: 90px;
             height: 90px;
             margin: 6px auto 6px;
@@ -449,22 +451,49 @@
             background-color: #404040;
         }
 
+        .icon-holder i{
+
+            color: #fff;
+            margin-top: 20px;
+            -webkit-box-reflect: below 1px ; 
+            -webkit-gradient:(linear, left top, left bottom, from(transparent));
+             stop-color:(0.6, transparent), to(rgba(0, 0, 0, 0.5));
+        }
+
+        .fa{
+            display: inline-block;
+            font: normal normal normal 20px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .fa-truck{
+            font-size: 3em;
+            margin-left: 22%;
+        }
+
         .serviceslider h3{
             font-size: 24px;
             color: #ccc;
             margin-bottom: 16px;
             font-family: "Oswald", sans-serif;
+            font-weight: 400;
+            margin: 10px 0 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-left: 35%;
         }
 
-        .service-container p{
-            font-size: 1.1em;
-            max-width: 800px;
-            color: black;
+        .serviceslider p{
+            font-size: 16.5px;
+            max-width: 550px;
+            color:black;
             line-height: 1.8em;
             padding: 10px;
             font-weight: 300;
             margin: 0 auto;
-        } */
+        } 
 
 
     </style>
@@ -666,35 +695,52 @@
         </div>
     </div><br><br>
 
-    <!-- <div class="serviceslider-holder">
+    <div class="serviceslider-holder">
         <div class="service-container">
             <div class="serviceslider">
-                <div class="flex-viewport" style="overflow: hidden; position: relative; height: 297px;">
-                    <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-676px, 0px,0px);">
-                        <li class="clone" aria-hidden="true" style="width: 701px; float: left; display: block;">
+                <!-- <div class="flex-viewport" style="overflow: hidden; position: relative; height: 350px;">
+                    <ul class="slides" style="width: 100%; transition-duration: 0s; transform: translate3d(-676px, 0px,0px); margin-left: 650px;">
+                        <li class="clone" aria-hidden="true" style="width: 701px; float: left; display: block;"></li> -->
                         <div class="icon-holder">
                             <i class="fa fa-truck"></i>
-                        </div>
+                        </div><br>
                         <h3>Fully managed solution delivery</h3>
-                        <p>"Are you looking for minimal involvement and timely deliveries. This
-                            model could be for you. We take complete ownership of end to end 
-                            management of your requirements and work towards mutually agreed 
-                            timely deliveries"
-                        </p>
-                        </li>
+                        <p>Are you looking for minimal involvement and timely deliveries. This model could be for you. We take 
+                            complete ownership of end to end management of your requirements and work towards mutually agreed 
+                            timely deliveries
+                        </p> 
+                    <!-- </ul>
+                </div> -->
+           </div>
+       </div> <br><br>
 
-
-
-            </div>
+       <div class="service-container">
+        <div class="serviceslider">
+            <div class="icon-holder">
+                <i class="fa fa-truck"></i>
+            </div><br>
+            <h3>Startup partnership</h3>
+            <p>We specialize in providing unique engagement models to address startup needs. Since each
+                startup encounters unique business environments, they also need uniqe engagement models to 
+                see their business through to success. Contact us to understand what we can offer you using our
+                site chat feature or over a phone call for a quick response. 
+            </p> 
         </div>
-    </div> -->
+        </div><br>
 
-
-
-
-
-
-
+        <div class="service-container">
+            <div class="serviceslider">
+                <div class="icon-holder">
+                    <i class="fa fa-truck"></i>
+                </div><br>
+                <h3>Fully managed solution delivery</h3>
+                <p>Are you looking for minimal involvement and timely deliveries. This model could be for you. We take 
+                    complete ownership of end to end management of your requirements and work towards mutually agreed 
+                    timely deliveries
+                </p> 
+            </div>
+            </div><br>
+    </div><br>
 </body>
 
 </html>
