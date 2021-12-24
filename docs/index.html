@@ -82,7 +82,7 @@
 
         .active,
         .dots:hover {
-            background-color: #404040;
+            background-color:#787878;
         }
 
         .fade {
@@ -233,6 +233,40 @@
             .nav-links:hover {
                 color: black;
             }
+
+            /* .service-slide{
+                display: none;
+                width:150px;
+                height:150px;
+            } */
+
+            /* h3.serviceslider{
+            font-size: 24px;
+            color: #ccc;
+            margin-bottom: 16px;
+            font-family: "Oswald", sans-serif;
+            font-weight: 400;
+            margin: 10px 0 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-left: 10%;
+            }
+        
+
+            .serviceslider.three{
+                margin-left: 2%;
+            }
+
+            .service-container p {
+                font-size: 16.5px;
+                max-width: 800px;
+                color: black;
+                line-height: 1.8em;
+                padding: 10px;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-left: 25px;
+            } */
         }
 
 
@@ -313,10 +347,6 @@
             right: 10px;
             top: 10px;
         }
-
-        /* #services.content{
-            padding: 50px 0 0 0;
-        } */
 
         .services-icon {
             position: relative;
@@ -435,12 +465,8 @@
         .services-white-box {
             display: inline-block;
             color: white;
-            /* background: #fff; */
-        }
 
-        /* .services-box:hover{
-            background-color: white;
-        } */
+        }
 
 
         li {
@@ -524,12 +550,148 @@
             font-weight: 300;
             margin: 0 auto;
         }
-/* 
-        .active .box:hover{
-             display: inline-block;
+ 
+        a.active,
+        a:hover{
+        
             color: #909090;
-            background-color: violet;
+            background-color: white;
+        } 
+
+        .clients{
+            background-color: #787878;
+            text-align: center;
+        }
+
+        .clients-head{
+            color: white;
+            font-size: 15px;
+            font-weight: 250;
+            opacity: 0.9;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-family: "Oswald", sans-serif;
+        }
+        .third-slide {
+            color: white;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .client-slide img {
+            width: auto;
+            height: auto;
+        }
+/* 
+        .slick-slider
+        {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                    user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+                touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list
+        {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .slick-list:focus
+        {
+            outline: none;
+        }
+        .slick-list.dragging
+        {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                -o-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-track:before,
+        .slick-track:after
+        {
+            display: table;
+            content: '';
+        }
+        .slick-track:after
+        {
+            clear: both;
+        }
+        .slick-loading .slick-track
+        {
+            visibility: hidden;
+        }
+
+        .slick-client-slide
+        {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        [dir='rtl'] .slick-client-slide
+        {
+            float: right;
+        }
+        .slick-client-slide img
+        {
+            display: block;
+        }
+        .slick-client-slide.slick-loading img
+        {
+            display: none;
+        }
+        .slick-client-slide.dragging img
+        {
+            pointer-events: none;
+        }
+        .slick-initialized .slick-client-slide
+        {
+            display: block;
+        }
+        .slick-loading .slick-client-slide
+        {
+            visibility: hidden;
+        }
+        .slick-vertical .slick-client-slide
+        {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        .slick-arrow.slick-hidden {
+            display: none;
         } */
+
 
     </style>
 </head>
@@ -721,7 +883,7 @@
                 <div class="content"></div>
             </div>
             <div class="services-box-container">
-                <div class="services-first-box box" onclick="currentServiceSlide(1)">
+                <div class="services-first-box box active" onclick="currentServiceSlide(1)">
                     <a name="0" class="services-box">STARTUP <br> PARTNERSHIP</a>
                 </div>
                 <div class="services-white-box box">
@@ -777,11 +939,9 @@
                 </p>
             </li><br>
         </div>
-
     </div>
-
-
     </div><br>
+  
     <!--  Services Script-->
     <script>
         var serviceSlideIndex = 1;
@@ -811,6 +971,67 @@
             dots[serviceSlideIndex - 1].className += " active";
         }
     </script>
+
+<div id="clients" class="section">
+    <div class="content"><br><br></div>
+</div><br><br>
+
+
+<div class="clients">
+    <div id="clients" class="section">
+        <div class="content"></div>
+        <div class="services-icon">
+            <i class="fa fa-users"></i>
+        </div>
+    </div>
+    <h3 class="clients-head">FOR WHO WE DO IT</h3>
+    <h2 class="white">Clients</h2>
+    <div class="third-slide">
+        <div class="small-separator">__________</div>
+        <section class="client-logos slider">
+            <div class="client-slide fade"><img src="images/c1.png"></div>
+            <div class="client-slide fade"><img src="images/c2.png"></div>
+            <div class="client-slide fade"><img src="images/c3.png"></div>
+            <div class="client-slide fade"><img src="images/c4.png"></div>
+            <div class="client-slide fade"><img src="images/c5.png"></div>
+            <div class="client-slide fade"><img src="images/c6.png"></div>
+            <div class="client-slide fade"><img src="images/c7.png"></div>
+            <div class="client-slide fade"><img src="images/c8.png"></div>
+         </section>
+      </div>
+    </div>  
+</div>
+<br><br>
+
+<!-- client slides -->
+
+<script>
+    $(document).ready(function(){
+    $('.client-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+
+
 
 </body>
 
