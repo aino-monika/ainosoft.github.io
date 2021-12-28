@@ -582,36 +582,6 @@
             color: white;
         }
 
-        /* @keyframes scroll{
-            0%{
-                transform: translateX(0);
-            }
-            100%{
-                transform: translateX(calc(-250px *8));
-            }
-        }
-
-        .client-slide img {
-                width: 20vw;
-                height:20vh;
-        }   
-
-        .client-slider{
-                height:100px;
-                margin:auto;
-                overflow: hidden;
-                position: relative;
-                width:auto;
-        }
-
-        .client-logos{
-                animation: scroll 40s linear infinite;
-                display: flex;
-                width:calc(50px *14);
-                transform: translate3d(-271px, 0px, 0px); 
-                transition: all 400ms ease 0s;
-        } */
-
         .slick-slide {
             margin: 0px 20px;
         }
@@ -660,9 +630,9 @@
         {
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+             transform: translate3d(0, 0, 0);
         }
 
         .slick-track
@@ -727,13 +697,11 @@
         .slick-arrow.slick-hidden {
             display: none;
         }
-
-
-
-
     </style>
 </head>
+
 <body>
+
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="numberinfo">1/5</div>
@@ -806,12 +774,8 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
-
-
-
-
-
     </script>
+
     <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fa fa-bars"></i>
@@ -842,7 +806,8 @@
         </ul>
     </nav> 
     <!-- navbar script -->
-    <script>
+  
+  <script>
         let mainNav = document.getElementById('js-menu');
         let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -850,7 +815,9 @@
             mainNav.classList.toggle('open');
         });
     </script>
-     <!-- <div style="text-align: center">
+    
+    
+    <!-- <div style="text-align: center">
         <a class="start" style="color: white">
             <i class="fa fa-angle-double-down" style="font-size:48px;color:red"></i>"MORE"</a><br>
     </div>  -->
